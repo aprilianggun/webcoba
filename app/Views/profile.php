@@ -13,10 +13,10 @@
 
 <body>
     <div class="background">
-        <img src="/april.jpeg" alt="cantik" width=130 height=130 class="gambar">
+        <img src="<?=base_url('/assets/img/april.jpeg')?>" alt="cantik" width=130 height=130 class="gambar">
         <div class="teks">
             <p>Nama: <?= $nama ?></p>
-            <p>Kelas: <?= $kelas ?></p>
+            
             <p>NPM: <?= $npm ?></p>
         </div>
     </div>
