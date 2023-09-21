@@ -34,7 +34,7 @@ class UserController extends BaseController
             'nama'=>$nama,
             'npm'=>$npm
         ];
-        dd($data);
-        //return view('profile',$data);
+        //dd($data);
+        return view('profile',$data);
     }
 }

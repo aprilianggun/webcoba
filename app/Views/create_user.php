@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?= base_url("assets/css/form.css") ?>">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="<?=base_url('user/store')?>" method="post">
-    <table>
-        <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td><input type="text" name="nama"></td>
-        </tr>
-        <tr>
-            <td>NPM</td>
-            <td>:</td>
-            <td><input type="text" name="npm"></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Simpan"></td>
-        </tr>
-    </form>
+
+    <style>
+        .tengah {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top {
+            margin-top: 20px;
+        }
+    </style>
+    <div class="card">
+        <div class="card">
+            <div class="form-container">
+                <form action="<?= base_url('user/store') ?>" method="post">
+                    <div class="form-input">
+                        <input type="text" name="nama" placeholder="Nama" required />
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="npm" placeholder="NPM" required />
+                    </div>
+                    <input type="submit" value="Submit" class="btn-login" />
+                </form>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
