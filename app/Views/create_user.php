@@ -31,6 +31,17 @@
                     <div class="form-input">
                         <input type="text" name="npm" placeholder="NPM" required />
                     </div>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>:</td>
+                        <td>
+                            <select name="kelas" id="kelas">
+                                <?php foreach ($kelas as $item) : ?>
+                                    <option value="<?= $item['id'] ?>"><?= $item['nama_kelas'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </td>
+                    </tr>
                     <input type="submit" value="Submit" class="btn-login" />
                 </form>
             </div>
